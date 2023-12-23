@@ -1,0 +1,327 @@
+/*-------------------------------------CSS for accueil---------------------------------------*/
+h1{
+    font-family: "Panthera";
+    font-size: 4.97vw;
+    color: var(--rose-foncee);
+    line-height: 0.36vw;
+}
+
+h2{
+    font-family: "BEYNO";
+    font-size: 2em;
+    color: var(--rose-foncee);
+    font-weight: 300;
+    line-height: 2.19vw;
+}
+
+.citation{
+    font-family: "Cantarell";
+    font-size: 1.02vw;
+    color: var(--blanc);
+    text-align: justify;
+}
+
+.histoire{
+    color: var(--blanc);
+    font-size: 1em;
+}
+
+body{
+    background: url(./Illustrations/All/arrière_plan.png);
+    width: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+/*barre laterale de gauche*/
+.vertical-line1 {
+    border-left: 0.21vw solid var(--gris-clair);
+    min-height: 30vw;
+    margin-top: -30%;
+}
+
+.vertical-line2 {
+    border-left: 0.21vw solid var(--gris-clair); 
+    height: 21vw;
+    margin-top: -30vw;
+}
+
+.vertical-icon {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-left: 1.02vw;
+}
+
+.vertical-icon .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    list-style-type: none;
+    margin-left: -88%;
+    margin-top: -8.3vw;
+}
+.vertical-icon .icons img {
+    width: 1.1rem;
+}
+
+/*design header*/
+.style-header ul li .wakanda{
+    color: var(--blanc);
+    text-decoration: none;
+}
+.style-header ul li .enigme{
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/*presentation*/
+.presentation{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin-top: 2.19vw;
+}
+.presentation .text-presentation{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    text-align: justify;
+}
+.presentation .image-presentation img{
+    width: 51.24vw;
+}
+.description{
+    color: var(--blanc);
+    font-family: "Cantarell";
+}
+
+/*acteur et actrice*/
+#acteur{
+    display: flex;
+    margin-left: 7vw;
+    margin-right: 0.6%;
+    margin-top: 5vw;
+    background-color: var(--noir);
+    height: 18.3vw;
+}
+#acteur .img{
+    height: 18.3vw;
+}
+#acteur #killmonger{
+    margin-left: 2rem;
+    position: relative;
+    top: -2rem;
+    height: 22vw;
+}
+.textacteur {
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    color: var(--blanc);
+}
+.textacteur h2{
+    margin-left: 2em;
+}
+.textacteur p{
+    text-align: justify;
+    margin-top: -5%;
+    font-family: "Cantarell";
+    font-size: 1vw;
+}
+#acteur p,a{
+    color: var(--blanc);
+}
+#acteur .fillette{
+    position: relative;
+}
+#acteur .rond{
+    border: 0.07vw solid var(--noir);
+    border-radius: 50%;
+    width: 21%;
+    height: 12%;
+    text-align: center;
+    background: var(--noir);
+    margin-top: -90%;
+    margin-left: 60%;
+    padding-top: 0.43vw;
+    position: absolute;
+    color: var(--blanc);
+}
+
+/*biographie*/
+.bio{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin-top: 5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bio .naissance{
+    margin-left: 5%;
+    margin-top: 20%;
+    margin-right: 10%;
+}
+.bio .histoire{
+    font-family: "Cantarell";
+    font-size: 1em;
+    margin-bottom: 2.19vw;
+    text-align: justify;
+}
+.bio .right .biographie{
+    background:var(--gris-clair);
+    margin-left: 10%;
+    margin-top: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+    border-radius: 1.46vw;
+    align-items: center;
+}
+.bio .right .biographie img{
+    margin-top: -60%;
+    width: 90%;
+    margin-left: 5%;
+}
+.right .biographie .nom{
+    font-size: 2.04vw;
+    text-align: center;
+    font-weight: bold;
+}
+.right .biographie .appellation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.04vw;
+}
+.right .biographie .appellation a{
+    color: var(--blanc);
+    text-decoration: none;
+}
+.right .biographie .appellation .btn-appel{
+    background: var(--violet);
+    padding-top: 0.36vw;
+    padding-bottom: 0.36vw;
+    padding-left: 0.73vw;
+    padding-right: 0.73vw;
+    border-radius: 0.36vw;
+}
+.right .biographie .text-biographie p{
+    font-size: 1em;
+    font-family: "Cantarell";
+}
+
+.right .biographie .text-biographie p span{
+    color: var(--noir);
+    font-family: "Cantarell";
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.right .tenue{
+    margin-left: 15%;
+    margin-top: 60%;
+    position: relative;
+    top: -250px;
+    left: -100px;
+}
+/* .right .tenue img{
+    width: 80%;
+} */
+
+.right .tenue img{
+    width: 509px;
+    height: 435px;
+}
+
+/*contact*/
+.contact{
+    background-image: url(../images/accueil/Pantherhome7.png);
+    padding-bottom: 10%;
+    padding-top: 3%;
+    margin-left: -40%;
+}
+.contact .form-contact{
+    width: 50vw;
+    margin-top: 10%;
+    margin-left: 44%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    background: linear-gradient(
+        to bottom, #FFFFFF 15%, #02174000
+    );
+    border-radius: 14.64vw;
+}
+.contact .form-contact p{
+    font-size: 1em;
+    font-family: "Cantarell";
+    line-height: 0.36vw;
+    color: var(--noir);
+}
+.contact .form-contact .style-contact{
+    font-size: 3.66vw;
+    font-weight: bold;
+}
+.contact .form-contact input{
+    margin: 0.73vw;
+    padding-left: 1.46vw;
+    font-size: 1em;
+    width: 38.06vw;
+    height: 4.09vw;
+    border: 0.07vw solid var(--bleu-noir);
+    border-radius: 2.78vw;
+    background: transparent;
+}
+.contact .form-contact textarea{
+    margin: 0.73vw;
+    width: 38.06vw;
+    padding-left: 3%;
+    padding-right: -2%;
+    padding-top: 2%;
+    border-color: 0.07vw solid var(--bleu-noir);
+    border-radius: 2.78vw;
+    background: transparent;
+    font-size: 1em;
+}
+.contact .form-contact button{
+    background: var(--blanc-rose);
+    width: 12.73vw;
+    height: 3.95vw;
+    border-color: 0.07vw solid var(--bleu-noir);
+    border-radius: 2.78vw;
+    margin: 0 auto;
+    font-size: 1em;
+}
+/* pop-up message */
+.popup-message {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%, rgba(2, 23, 64, 0) 100%);
+    opacity: 0.99; 
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%, rgba(2, 23, 64, 0) 100%);    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}

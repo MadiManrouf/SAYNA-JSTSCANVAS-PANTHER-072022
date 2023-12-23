@@ -1,0 +1,185 @@
+/*---------------------------------------------------------------------------------------------*/
+/*-------------------------------------CSS for enigme---------------------------------------*/
+/*----------------------------------------§§§--------------------------------------------------*/
+
+/*typograhies*/
+h1{
+    font-family: "BEYNO";
+    font-size: 3vw;
+    color: var(--rose-foncee);
+    font-weight: 300;
+    line-height: 2.19vw;
+    text-align:justify;
+}
+h2{
+    font-family: "Wakanda forever";
+    font-size: 3.14vw;
+    color: var(--rose-foncee);
+    font-weight: 300;
+}
+#texte-enigme{
+    font-family: "Wakanda forever";
+    font-size: 3.14vw;
+}
+body{
+    background: url(../images/all/arrière_plan.png);
+    width: 100%;
+}
+
+/*design header*/
+.style-header ul li .accueil{
+    color: var(--blanc);
+    text-decoration: none;
+}
+.style-header ul li .wakanda{
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/*section presentation*/
+.presentation{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding-top: -30%;
+    margin-top: -2%;
+}
+.presentation .image-presentation{
+    background-image: url(../images/enigme/Pantherenigme1.png);
+    background-repeat: no-repeat;
+    background-size: 62vw;
+    background-position-y: -12vw;
+    background-position-x: 3vw;
+    margin-top: 5%;
+
+}
+/*
+.presentation .image-presentation img{
+    position: absolute;
+    width: 55vw;
+    left: 15%;
+    bottom: 15%;
+}*/
+.presentation .contenu-presentation{
+    margin-left: -10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.presentation .contenu-presentation .titre-presentation{
+    margin-top: -2%;
+    padding-top: -1.8vw;
+    padding-bottom: 1.46vw;
+    padding-right: 0%;
+    letter-spacing: 0.36vw;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.presentation .contenu-presentation .titre-presentation h1{
+    padding-right: 21%;
+    line-height: 3.5vw;
+}
+.presentation .contenu-presentation .text-presentation .conteneur-text{
+    position: relative;
+    margin-left: -5%;
+    margin-top: -5%;
+}
+.presentation .contenu-presentation .text-presentation .conteneur-text img{
+    width: 85%;
+}
+.presentation .contenu-presentation .text-presentation .conteneur-text p{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 0.73vw;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*section langage*/
+.langage{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    width: 90%;
+    margin:0 auto;
+}
+.langage .mot-wakandais h2{
+    word-spacing: 0.73vw;
+    line-height: 4.39vw;
+    margin-right: 38%;
+    margin-top: 5%;
+    font-size: 2.34vw;
+}
+
+.langage .savoir{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 30%;
+}
+
+.langage .savoir .transcription{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.langage .savoir .transcription p{
+    color: var(--blanc);
+}
+.langage .savoir .transcription p span{
+    font-family: "Wakanda forever";
+    font-size: 1em;
+    line-height: 2.19vw;
+}
+.langage .savoir .transcription .alphabet{
+    margin-top: -20%;
+}
+.langage .savoir .transcription .reponse input[type="text"]{
+    color: var(--rose-foncee);
+    background: transparent;
+    width: 38.06vw;
+    height: 4.09vw;
+    border: 0.07vw solid var(--rose-foncee);
+    border-radius: 2.78vw;
+    padding-left: 5%;
+    padding-bottom: 1.5%;
+}
+.langage .savoir .transcription .reponse ::placeholder{
+    color: var(--rose-foncee);
+    font-size: 1vw;
+}
+.langage .savoir .transcription .reponse .envoie{
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.langage .savoir .transcription .reponse button{
+    color: var(--noir);
+    background: var(--blanc-rose);
+    width: 12.73vw;
+    height: 3.95vw;
+    border-color: 0.07vw solid var(--bleu-noir);
+    border-radius: 2.78vw;
+    margin: 0 auto;
+    font-size: 1em;
+}
+.langage .savoir .savais-tu .conteneur-text{
+    position: relative;
+    margin-left: -5%;
+    margin-top: -15%;
+}
+.langage .savoir .savais-tu .conteneur-text img{
+    width: 85%;
+}
+.langage .savoir .savais-tu .conteneur-text p{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 0.73vw;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 60%;
+    margin: 0 auto;
+}
+.langage .savoir .savais-tu .conteneur-text .text{
+    text-align: center;
+    margin-top: -5%;
+}

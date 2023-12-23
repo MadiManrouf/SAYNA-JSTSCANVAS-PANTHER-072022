@@ -1,0 +1,242 @@
+/*---------------------------------------------------------------------------------------------*/
+/*-------------------------------------CSS for all pages---------------------------------------*/
+/*----------------------------------------§§§--------------------------------------------------*/
+
+                                    /*font à utiliser*/
+/*BEYNO*/
+@font-face {
+    font-family: BEYNO;
+    src: url("./police/BEYNO.ttf");
+}
+/*Panthera*/
+@font-face {
+    font-family: Panthera;
+    src: url(./police/PantheraRegular-MVZ9J.ttf);
+}
+/*Wakanda forever*/
+@font-face {
+    font-family: Wakanda forever;
+    src: url(./police/WakandaForever-Regular.ttf);
+}
+/*Cantarell*/
+@font-face {
+    font-family: Cantarell;
+    src: url(.//police/Cantarell-Regular.ttf);
+}
+/*couleurs*/
+:root{
+    --blanc: #FFFFFF;
+    --blanc-rose: #F2CEF2;
+    --gris-clair: #9E91B7;
+    --rose-foncee: #DF99F2;
+    --violet: #3D2DA6;
+    --bleu-noir: #07338C;
+    --noir:#021740; /* rgb(2,23,64) */
+}
+html {
+    font-size: 1vw;
+    font-family: "Cantarell";
+    margin-bottom: 3.66vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*design header*/
+.style-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin:0 auto;
+}
+.style-header .logo img{
+    vertical-align: middle;
+}
+.style-header .logo .logo-sayna{
+    width: 2.4vw;
+}
+.style-header .logo .logo-x{
+    width: 1vw;
+}
+.style-header .logo .logo-marvel{
+    width: 6vw;
+}
+.style-header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1.09vw;
+    font-family: "BEYNO";
+}
+.style-header ul li a{
+    color: var(--rose-foncee);
+}
+
+/*footer*/
+footer{
+    font-family: "Cantarell";
+    font-size: 0.73vw;
+}
+/*partie gauche*/
+.footer{
+    background-image: url();
+    margin-left: -1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-position: center;
+    padding-top: 30%;
+    padding-bottom: 3%;
+    margin-bottom: -10%;
+}
+.footer .image-footer{
+    margin-right: 15%;
+    margin-top: -40%;
+    position: relative;
+}
+.footer .right-footer{
+    margin-top: -45%;
+}
+.footer .image-footer .marvel{
+    position:absolute;
+    top: 8vw;
+    left: 28.1vw;
+}
+.footer .image-footer .marvel img{
+    width: 10vw;
+}
+.footer .image-footer img{
+    float: right;
+    width: 40%;
+}
+
+/*partie droite*/
+.footer .right-footer{
+    display: grid;
+    grid-template-rows:80% 20% ;
+}
+.footer .right-footer .suivre{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+h4{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 1em;
+    letter-spacing: 1em;
+}
+
+footer .text-footer{
+    margin-top: 10%;
+}
+footer .text-footer p{
+    color: var(--blanc);
+    font-family: "Cantarell";
+    font-size: 0.73vw;
+}
+.footer .right-footer .social-symbole img{
+    margin: 0.73vw;
+    width: 3.29vw;
+}
+.footer .right-footer .suivre .suivre-social{
+    margin-left: -30%;
+    margin-bottom: 5%;
+}
+.footer .right-footer .loi p{
+    color: var(--blanc);
+    font-size: 0.73vw;
+    font-family: "Cantarell";
+    margin-top: -5%;
+}
+
+/*position fixe barre laterale*/
+.scrolling {
+    position:fixed ;
+}
+
+/*animation menu de navigation*/
+#header .style-header a:hover{
+    color: var(--rose-foncee);
+    text-decoration: underline;
+}
+
+/* animation enigme boutton ENVOYER || Effet de surbrillance */
+.langage button[type='submit']:hover {
+    box-shadow: 0px 0px 20px #F2CEF2;
+    cursor: pointer;
+}
+#acteur .rond:hover{
+    box-shadow: 0px 0px 20px #F2CEF2;
+    cursor: pointer;
+}
+
+/*animation contact boutton ENVOYER*/
+.contact button[type='submit']:hover{
+    box-shadow: 0px 0px 20px #021740;
+    cursor: pointer;
+}
+
+/*animation logo reseaux sociaux || coloration*/
+.container .vertical-icon ul a img:hover{
+    filter: brightness(0) invert(1) grayscale(100%) brightness(1);
+}
+
+/*animation logo header || coloration*/
+.style-header .logo a img:hover{
+    filter: brightness(70%) saturate(200%) contrast(150%) hue-rotate(270deg);
+}
+
+/*animation footer || zoom*/
+.image-footer:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.right-footer img:hover{
+    transform: scale(1.1);
+}
+
+/* definition fade in venant de gauche*/
+@keyframes fade-in-left {
+    from {
+        opacity: 0; /* from opacity 0 */
+        transform: translateX(-50px); /* from left -50px */
+    }
+    to {
+        opacity: 1; /* to opacity 1 */
+        transform: translateX(0); /* to true position */
+    }
+}
+
+/* Fade in left */
+section, #header {
+    animation-name: fade-in-left;
+    animation-duration: 2s;
+}
+
+/* definition fade in venant de haut*/
+@keyframes fade-in-up {
+    from {
+        opacity: 0; /* from opacity 0 */
+        transform: translateY(-200px); /* from up -200px */
+    }
+    to {
+        opacity: 1; /* to opacity 1 */
+        transform: translateY(0); /* to true position */
+    }
+}
+
+/* fade in down */
+.scrolling {
+   animation-name: fade-in-up;
+   animation-duration: 2s;
+}
+/*animation boutton A propos et Wakanda*/
+.footer .right-footer .suivre .suivre-page p a{
+    text-decoration: none;
+    color: var(--blanc);
+}
+/* canvas */
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}

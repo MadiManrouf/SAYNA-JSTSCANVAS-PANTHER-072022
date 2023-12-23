@@ -1,0 +1,120 @@
+/*---------------------------------------------------------------------------------------------*/
+/*-------------------------------------CSS for wakanda---------------------------------------*/
+/*----------------------------------------§§§--------------------------------------------------*/
+
+/*typograhies*/
+h1{
+    font-family: "BEYNO";
+    font-size: 4.97vw;
+    color: var(--rose-foncee);
+    line-height: 0.36vw;
+    font-weight: 300;
+}
+h2{
+    font-family: "BEYNO";
+    font-size: 2em;
+    color: var(--rose-foncee);
+    font-weight: 300;
+}
+h3{
+    font-family: "Wakanda forever";
+    font-size: 3.14vw;
+    color: var(--rose-foncee);
+    font-weight: 300;
+}
+body{
+    background: url(../images/all/arrière_plan.png);
+    width: 100%;
+}
+p{
+    font-family: "Cantarell";
+    font-size: 1em;
+    color: var(--blanc);
+}
+
+/*design header*/
+.style-header nav ul li .accueil{
+    color: var(--blanc);
+    text-decoration: none;
+}
+.style-header nav ul li .enigme{
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/*design presentation*/
+.presentation {
+    background-image: url(../images/wakanda/Pantherwakanda1.png);
+    background-position: -8vw;
+    background-size: 120vw;
+    width: 100vw;
+    height: 35vw;
+    background-repeat: no-repeat;
+    padding-top: 10vw;
+    padding-left: 5vw;
+    padding-bottom: 0;
+    margin-bottom: 5%;
+}
+
+.presentation .wakanda-forever p{
+    color: var(--blanc);
+    width: 40%;
+    margin-right: 0;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+                /*partie principal*/
+/*partie 1*/
+.partie-un{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5%;
+    background-image: url(../images/wakanda/Pantherwakanda2.png);
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    background-position: 13vw -3vw;
+}
+.partie-un .left{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 8%; 
+}
+.partie-un .left iframe{
+    width: 36.5vw;
+    height: 30vw;
+}
+.partie-un .right{
+    padding-left: 5%;
+    padding-right: 15%;
+    text-align: justify;
+}
+
+/*partie 2*/
+.partie-deux{
+    width: 90%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5%;
+}
+.partie-deux .left{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+.partie-deux .right{
+    padding-left: 5%;
+    padding-right: 15%;
+    text-align: justify;
+}
+.partie-deux .right .representation{
+    margin-left: -15%;
+    margin-top: -5%;
+}
+.partie-deux .right .representation img{
+    width: 40vw;
+}
+
